@@ -1,0 +1,139 @@
+@media (max-width: 640px) {
+    img.product-thumb {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* === NAVBAR === */
+.navbar {
+    background: var(--milano-cream);
+    border-bottom: 1px solid #e4d8c9;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-logo {
+    height: 42px;
+    width: auto;
+    border-radius: 6px;
+}
+
+.navbar-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--milano-brown);
+    letter-spacing: 0.3px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navbar-user {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.navbar-logout {
+    background: var(--milano-red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.navbar-logout:hover {
+    background: #8f2020;
+    transform: translateY(-1px);
+}
+
+/* === SIDEBAR === */
+.sidebar {
+    width: 230px;
+    background: var(--milano-cream);
+    border-right: 1px solid #e4d8c9;
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    background: transparent;
+}
+
+.sidebar-item:hover {
+    background: rgba(176, 122, 74, 0.12); /* marrón suave */
+    color: var(--milano-red);
+}
+
+.sidebar-item.active {
+    background: rgba(161, 43, 43, 0.15); /* bordó tenue */
+    color: var(--milano-red);
+    font-weight: 600;
+}
+
+.sidebar-icon {
+    color: var(--milano-brown);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item.active .sidebar-icon {
+    color: var(--milano-red);
+}
+
+/* === DASHBOARD LAYOUT === */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--milano-beige);
+}
+
+.dashboard-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    background: var(--milano-beige);
+}
